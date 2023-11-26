@@ -5,14 +5,14 @@ body {
   background-image: linear-gradient(to right,rgb(11, 11, 105), rgb(92, 6, 92)) !important; 
 }
 
-.navegação {
-  background-color: rgb(39, 39, 39);
-}
-
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(39, 39, 39);
-  color: rgb(51, 81, 107);
-  text-align: center;
+  color: rgb(36, 86, 133);
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h2 {
@@ -20,22 +20,42 @@ h2 {
   color: rgb(223, 218, 218) !important;
 }
 
-div{
+div.container-imgs {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center; 
+  flex-wrap: wrap;
 }
 
-img:hover {
+.navegação {
+  background-color: rgb(39, 39, 39);
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-navegação {
+  background-image: linear-gradient(rgb(13, 13, 126), rgba(92, 6, 92, 0.8));
+  width: auto;
+  height: 30px;
+}
+
+.legenda {
+  color: rgb(230, 230, 230) !important;
+  overflow: auto;
+}
+
+.portifolio:hover {
+  width: 600px;
+  height: 600px;
+}
+
+.portifolio {
+  transition: width 1s, height 1s;
   width: 500px;
   height: 500px;
-}
-
-img {
-  transition: width 1s, height 1s;
   border-style: outset;
   border-color: azure;
   border-width: 6px;
-  width: 400px;
-  height: 400px;
 }
