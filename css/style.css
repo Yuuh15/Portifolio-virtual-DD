@@ -6,10 +6,12 @@ body {
 }
 
 header {
+  top: 0;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   background-color: rgb(39, 39, 39);
-  color: rgb(36, 86, 133);
+  color: rgb(18, 99, 175);
   margin-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
@@ -17,10 +19,29 @@ header {
 
 h2 {
   text-align: center;
-  color: rgb(223, 218, 218) !important;
+  color: rgb(224, 224, 224) !important;
 }
 
-div.container-imgs {
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(2, 44, 136);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(138, 105, 255);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+span.container-imgs {
   display: flex;
   align-items: center;
   text-align: center;
@@ -29,14 +50,12 @@ div.container-imgs {
 }
 
 .navegação {
-  background-color: rgb(39, 39, 39);
-  text-align: right;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .btn-navegação {
-  background-image: linear-gradient(rgb(13, 13, 126), rgba(92, 6, 92, 0.8));
+  background-color: whitesmoke;
   width: auto;
   height: 30px;
 }
@@ -52,9 +71,10 @@ div.container-imgs {
 }
 
 .portifolio {
-  transition: width 1s, height 1s;
-  width: 500px;
-  height: 500px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: width 0.8s, height 0.8s;
+  width: 550px;
+  height: 550px;
   border-style: outset;
   border-color: azure;
   border-width: 6px;
