@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+body {
+  background-image: linear-gradient(to right,rgb(11, 11, 105), rgb(92, 6, 92)) !important; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(39, 39, 39);
+  color: rgb(36, 86, 133);
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(223, 218, 218) !important;
+}
+
+div.container-imgs {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.navegação {
+  background-color: rgb(39, 39, 39);
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(174, 174, 233) !important;
+}
+
+.btn-navegação {
+  transition: width 0.4s, height 0.4s;
+  background-image: linear-gradient(rgb(13, 13, 126), rgba(92, 6, 92, 0.8));
+  width: auto;
+  height: 30px;
+}
+
+.legenda {
+  color: rgb(230, 230, 230) !important;
+  overflow: auto;
+}
+
+.portifolio:hover {
+  width: 600px;
+  height: 600px;
+}
+
+.btn-navegação:hover {
+  height: 40px;
+}
+
+.portifolio {
+  transition: width 1s, height 1s;
+  width: 500px;
+  height: 500px;
+  border-style: inset;
+  border-color: rgb(74, 5, 138);
+  border-width: 6px;
+}

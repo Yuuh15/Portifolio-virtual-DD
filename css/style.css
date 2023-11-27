@@ -2,7 +2,8 @@
 
 
 body {
-  background-image: linear-gradient(to right,rgb(11, 11, 105), rgb(92, 6, 92)) !important; 
+  /*background-image: linear-gradient(to right,rgb(11, 11, 105), rgb(92, 6, 92)) !important; */
+  background-image: url("background_image.png");
 }
 
 header {
@@ -22,23 +23,29 @@ h2 {
   color: rgb(224, 224, 224) !important;
 }
 
-a:link {
-  color: rgb(0, 0, 0);
+.icon {
+  margin-left: 10px;
+  object-fit: fill;
+  border-radius: 60%;
 }
 
-/* visited link */
-a:visited {
-  color: rgb(2, 44, 136);
+.icon:hover {
+  border: 2px solid blueviolet;
 }
 
-/* mouse over link */
-a:hover {
-  color: rgb(138, 105, 255);
+a {
+  text-decoration: none !important;
+  color: rgb(174, 174, 233) !important;
 }
 
-/* selected link */
-a:active {
-  color: blue;
+span.introduction {
+  max-width: 85%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  line-break:strict
 }
 
 span.container-imgs {
@@ -55,9 +62,14 @@ span.container-imgs {
 }
 
 .btn-navegação {
-  background-color: whitesmoke;
+  transition: width 0.4s, height 0.4s;
+  background-image: linear-gradient(rgb(13, 13, 126), rgba(97, 4, 97, 0.8));
   width: auto;
   height: 30px;
+}
+
+.btn-navegação:hover {
+  height: 40px;
 }
 
 .legenda {
