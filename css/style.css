@@ -2,7 +2,6 @@
 
 
 body {
-  /*background-image: linear-gradient(to right,rgb(11, 11, 105), rgb(92, 6, 92)) !important; */
   background-image: url("background_image.png");
 }
 
@@ -11,6 +10,18 @@ header {
   position: sticky;
   display: flex;
   justify-content: space-between;
+  background-color: rgb(39, 39, 39);
+  color: rgb(18, 99, 175);
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header.mainheader {
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: center;
   background-color: rgb(39, 39, 39);
   color: rgb(18, 99, 175);
   margin-bottom: 20px;
@@ -38,6 +49,10 @@ a {
   color: rgb(174, 174, 233) !important;
 }
 
+a:hover {
+  color: rgb(153, 158, 187) !important;
+}
+
 span.introduction {
   max-width: 85%;
   display: flex;
@@ -57,8 +72,11 @@ span.container-imgs {
 }
 
 .navegação {
-  margin-top: auto;
-  margin-bottom: auto;
+  background-color: rgb(39, 39, 39);
+  text-align: right;
+  margin: auto;
+  padding-left: 100px;
+  margin-right: 0;
 }
 
 .btn-navegação {
@@ -72,22 +90,53 @@ span.container-imgs {
   height: 40px;
 }
 
+.btn-expandir {
+  transition: width 0.4s, height 0.4s;
+  background-image: linear-gradient(rgb(13, 13, 126), rgba(97, 4, 97, 0.8));
+  width: auto;
+  height: 40px;
+}
+
+.btn-expandir:hover {
+  height: 50px;
+}
+
 .legenda {
   color: rgb(230, 230, 230) !important;
   overflow: auto;
 }
 
 .portifolio:hover {
-  width: 600px;
-  height: 600px;
+  width: 575px;
+  height: 575px;
 }
 
 .portifolio {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
   transition: width 0.8s, height 0.8s;
-  width: 550px;
-  height: 550px;
-  border-style: outset;
-  border-color: azure;
+  width: 525px;
+  height: 525px;
+  border-style: inset;
+  border-color: rgb(74, 5, 138);
   border-width: 6px;
+}
+
+div.iframes-container {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+iframe.pag-inicial {
+  border: none;
+}
+
+.container-contatos {
+  display: flex;
+  max-width: 91%;
+  margin: auto;
+  background-color:rgba(102, 91, 151, 0.555); text-align:start; margin-left: 97px ; color: rgb(224, 224, 224);
 }
