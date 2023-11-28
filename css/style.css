@@ -131,7 +131,10 @@ div.iframes-container {
 }
 
 iframe.pag-inicial {
-  border: none;
+  border-width: 6px;
+  border-style: outset;
+  border-color: rgb(180, 180, 180);
+
 }
 
 .container-contatos {
